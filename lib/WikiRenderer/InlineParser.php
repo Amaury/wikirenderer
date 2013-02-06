@@ -21,6 +21,7 @@
  *
  */
 namespace WikiRenderer;
+use WikiRenderer\HtmlTextLine as WikiHtmlTextLine;
 
 /**
  * The parser used to find all inline tag in a single line of text.
