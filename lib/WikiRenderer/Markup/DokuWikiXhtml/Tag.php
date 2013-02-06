@@ -17,7 +17,7 @@ class Tag extends TagXhtml
                 $str .= substr ($string, $begin, $len);
                 $begin = $match[0][1] + strlen ($match[0][0]);
                 list ($href, $label) = $this->config->processLink ($match[2][0], $this->name);
-                $str . = '<a href="' . htmlspecialchars ($href) . '">' . htmlspecialchars ($label) . '</a>';
+                $str .= '<a href="' . htmlspecialchars ($href) . '">' . htmlspecialchars ($label) . '</a>';
             }
             if ($begin < strlen ($string)) {
                 $str.= substr ($string, $begin);
