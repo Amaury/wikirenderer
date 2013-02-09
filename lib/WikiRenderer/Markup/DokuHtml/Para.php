@@ -27,13 +27,15 @@ namespace WikiRenderer\Markup\DokuHtml;
 /**
  * traite les signes de type paragraphe
  */
-class Para extends \WikiRendererBlock
+use WikiRenderer\Block;
+
+class Para extends Block
 {
     public $type = 'para';
     protected $_openTag = '<p>';
     protected $_closeTag = '</p>';
 
-    public function detect($string)
+    public function detect($string, $inBlock = false)
     {
         if ($string == '')
             return false;

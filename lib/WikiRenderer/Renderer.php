@@ -23,6 +23,8 @@
  */
 namespace WikiRenderer;
 
+use Exception;
+
 /**
  * Main class of WikiRenderenr. You should instantiate like this:
  *      $ctr = new \WikiRenderer\Renderer();
